@@ -9,8 +9,22 @@ Print out:
     - the encoding of the response
     - the text of the response body
 
-    Hello - Test gitrepo
-
-
-
 '''
+
+import requests
+from pprint import pprint
+
+url = "http://demo.codingnomads.co:8080/tasks_api/users"
+
+response = requests.get(url)
+
+#printing out status code and 
+print(f"Response Status Code: {response.status_code}")
+print(f"Response Headers: {response.encoding}")
+
+#Converting response into .json format
+data = response.json()
+
+print(data)
+#pprint(data) to print readable .json format
+

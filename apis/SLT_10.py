@@ -1,15 +1,9 @@
-'''
-Write a program that makes a PUT request to update your user information to a new first_name, last_name and email.
-
-Again make a GET request to confirm that your information has been updated.
-
-'''
 import requests
 
 base_url = "http://demo.codingnomads.co:8080/tasks_api/users"
 
 body = {
-    "id": 423,
+    "id": 420,
     "first_name" : "Tobi",
     "last_name" : "Schmid",
     "email" : "tobee.schmid@migros.com"
